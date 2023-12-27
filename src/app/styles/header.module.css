@@ -1,0 +1,75 @@
+
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:3rem;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+    border:3px solid var(--txt-o);
+    border-radius: 1rem;
+    padding:1.25rem 2rem;
+}
+.list {
+    list-style: none;
+}
+.actions {
+    font-size: 1.75em;
+    line-height: .8em;
+    text-transform: uppercase;
+}
+.score {
+    padding:.5rem 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    background: white;
+    margin-right:-.5rem;
+}
+.scoreTxt {
+    font-size:4rem;
+    color: var(--txt-d);
+    font-weight: 700;
+}
+.scoreTitle {
+    letter-spacing: .2rem;
+    color: var(--txt-s  );
+    font-size:1rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 765px) {
+    .header {
+        width:100%;
+    }
+    .container {
+        width:100%;
+        padding-top:2rem;
+    }
+    .nav {
+        width:85%;
+        padding:.75rem 1.5rem;
+        border-radius: .5rem;
+    }
+    .actions {
+        font-size: .85rem;
+    }
+    .score {
+        padding:1rem 1.5rem;
+        margin-right:-.75rem;
+    }
+    .scoreTxt {
+        font-size: 2rem;
+    }
+    .scoreTitle{
+        font-size: .5rem;
+    }
+}

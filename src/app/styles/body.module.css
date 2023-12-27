@@ -1,0 +1,110 @@
+.container {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+}
+.choose {
+    background-image: url('../assets/images/bg-pentagon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+    align-items: center;
+}
+.optionsRow {
+    display:flex;
+    width:50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.centerRow {
+    width:80%;
+    margin-top:-3rem;
+}
+.option {
+    width:10rem;
+    height:10rem;
+    padding:1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .45rem solid rgba(0, 0, 0, 0.303);
+}
+.option:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+.scissors {
+   background: var(--sc-g); 
+}
+.rock {
+    background: var(--rk-g); 
+ }
+ .paper {
+    background: var(--pr-g); 
+ }
+
+ .lizard {
+    background: var(--lz-g); 
+ }
+ .spock {
+    background: var(--sp-g); 
+ }
+
+ .imgBg {
+    background:rgb(233, 231, 231);
+    width:1rem;
+    height:1rem;
+    display: flex;
+    border-radius: 100%;
+    padding:3.75rem;
+    justify-content: center;
+    align-items: center;
+    border-top: .4rem solid rgba(39, 39, 39, 0.182);
+ }
+
+ @media only screen and (max-width: 765px) {
+    .container {
+        margin-top:6rem;
+    }
+    .choose {
+        width:70%;
+        background-size:80%;
+        gap:1rem;
+    }
+    .optionsRow {
+        width:100%;
+    }
+    .centerRow {
+        width:120%;
+        margin-top:-1.5rem;
+        justify-content: space-between;
+
+    }
+    .option {
+        width: 6.5rem;
+        height:6.5rem;
+        border-bottom: .225rem solid rgba(0, 0, 0, 0.303);
+    }
+    .imgBg {
+        padding:2.4rem;
+        width:.6rem;
+        height:.6rem;
+        border-top: .2rem solid rgba(39, 39, 39, 0.182);
+
+    }
+    .imgSrc {
+        scale:.7;
+    }
+
+ }

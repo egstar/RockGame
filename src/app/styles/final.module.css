@@ -1,0 +1,155 @@
+.choose {
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:9rem;
+    align-items: center;
+    margin:auto;
+    margin-top:1rem;
+}
+.optionsRow {
+    display:flex;
+    width:95%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.option {
+    scale:1.9;
+    width:10rem;
+    height:10rem;
+    padding:1.5rem;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .45rem solid rgba(0, 0, 0, 0.303);
+}
+.option.emptyOption {
+    background-color: transparent;
+    border:none;
+    padding:3rem;
+
+}
+
+.scissors {
+   background: var(--sc-g); 
+}
+.rock {
+    background: var(--rk-g); 
+ }
+ .paper {
+    background: var(--pr-g); 
+ }
+
+ .lizard {
+    background: var(--lz-g); 
+ }
+ .spock {
+    background: var(--sp-g); 
+ }
+ .imgBg {
+    background:rgb(233, 231, 231);
+    width:1rem;
+    height:1rem;
+    display: flex;
+    border-radius: 100%;
+    padding:3.75rem;
+    justify-content: center;
+    align-items: center;
+    border-top: .4rem solid rgba(39, 39, 39, 0.182);
+ }
+.emptyBg {
+    background:rgba(0, 0, 0, 0.1);
+    width:1rem;
+    height:1rem;
+    display: flex;
+    border-radius: 100%;
+    padding:3.75rem;
+    justify-content: center;
+    align-items: center;
+ }
+ .usrPick {
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    text-align: center;
+ }
+ .usrPick:last-of-type {
+    margin-right:-1.5rem;
+ }
+ .userResult {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+ }
+ .status {
+    font-size:3.5rem;
+ }
+ .nxtGame {
+    padding:1rem 3.75rem;
+    width:100%;
+    font-size:1rem;
+    letter-spacing: .2em;
+    border-radius: 10px;
+    background: white;
+    color:var(--txt-d);
+    outline:none;
+    border:none;
+    cursor: pointer;
+ }
+ .nxtGame:hover {
+    filter:brightness(.95)
+ }
+
+ @media only screen and (max-width:765px) {
+   .choose {
+      width:100%;
+      flex-direction: column-reverse;
+      gap:3rem;
+      margin-top: 3rem;
+   }
+   .optionsRow{
+      width:70%;
+      justify-content: center;
+   }
+   .optionsRow:first-of-type{
+      width:90%;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .option {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin:auto 22%;
+      border-bottom: .22rem solid rgba(0, 0, 0, 0.303);
+  }
+  .imgBg {
+      padding:1.65rem;
+      width:.25rem;
+      height:.25rem;
+      border-top: .2rem solid rgba(39, 39, 39, 0.182);
+  }
+  .emptyBg {
+   padding:1.8rem;
+  }
+  .imgSrc {
+   scale:.5;
+}
+   .usrPick {
+      font-size:1rem;
+   }
+   .usrPick:first-of-type {
+      margin-left:2rem;
+   }
+   .usrPick:last-of-type {
+      margin-right:0rem;
+   }
+   .userResult {
+      position: absolute;
+      bottom:10rem;
+   }
+ }
