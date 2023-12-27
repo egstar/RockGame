@@ -37,7 +37,7 @@ Users able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/egstar/RockGame)
-- Live Site URL: [Vercel](https://rockgame.vercel.app)
+- Live Site URL: [Vercel](https://rockgame-phi.vercel.app)
 
 ## My process
 
