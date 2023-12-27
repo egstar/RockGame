@@ -23,6 +23,7 @@
     border:2px solid var(--txt-o);
     margin-top:-1rem;
     z-index: 0;
+    color:white;
 }
 .rules:hover {
     background-color: var(--txt-d);
